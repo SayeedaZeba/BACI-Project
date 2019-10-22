@@ -1,0 +1,195 @@
+/* This is based loosely on the layout described here:  https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog" */
+
+*{
+	box-sizing: border-box;
+}
+
+
+/* body
+{
+	font-family: Arial;
+	margin: 0px;
+	padding: 10px;
+	background-color: rgb(225, 225, 225);
+	background-image: url(img/fade_background.png);
+	background-attachment: fixed;
+} */
+
+div#header
+{
+	min-height:250px;
+	margin-top: 75px;
+	padding: 50px;
+	width: 100%;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	background-image: url(img/myanmar_fade.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+div#header h1
+{
+	font-size: 52pt;
+}
+
+div#header h2
+{
+	font-size: 24pt;
+}
+
+/* div#navBar
+{
+	overflow: hidden;
+	background-color: rgb(254, 203, 0);
+	background-image: url(img/navbar_overlay.png);
+}
+
+div#navBar a
+{
+	float: left;
+	display: block;
+	color: rgb(255, 255, 255);
+	background-color: rgb(52, 178, 51);
+	background-image: url(img/button_overlay.png);
+	text-align: center;
+	padding: 20px;
+	text-decoration: none;
+}
+div#navBar a:hover
+{
+	background-color: rgb(234, 40, 57);
+} */
+
+div#main
+{
+	padding: 20px;
+	margin: 10px 0px;
+	width: 100%;
+	min-height: 300px;
+	overflow: auto;
+	background-color: rgb(255, 255, 255);
+
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=password], select, textarea {
+    width: 78%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+		display: inline;
+		background-color: white;
+}
+
+.editDegree {
+	width: 78%; /* Full width */
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	display:inline-block;
+	text-align: center;
+	background-color: white;
+}
+
+
+label {
+	padding: 0px 10px;
+	display: inline;
+ 	width: 18%;}
+
+.registerHeader {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit], button[type=submit] {
+  background-color: rgb(52, 178, 51);
+  /* background-image: url(button_overlay.png); */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a red color */
+input[type=submit]:hover, button[type=submit]:hover {
+    background-color: rgb(234, 40, 57);
+}
+
+/* Add a background color and some padding around the form */
+.containerinput {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.login {
+	width: 30%;
+	float: right;
+}
+
+.registrationInfo {
+	width: 65%;
+	float: left;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 550px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+		.login {width: 100%;}
+		.registrationInfo {width: 100%;}
+}
